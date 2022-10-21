@@ -50,6 +50,7 @@ local function overseer(opts)
 					value = entry,
 					display = entry_str,
 					ordinal = entry.name,
+					lnum = 1,
 				}
 			end,
 		}),
