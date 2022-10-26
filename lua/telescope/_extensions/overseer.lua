@@ -45,7 +45,7 @@ local function overseer(opts)
 					})
 				end
 
-				local entry_str = string.format("%s %s(%d)", entry.name, entry.status, entry.exit_code)
+				local entry_str = string.format("%s %s(%d)", entry.name, entry.status, entry.exit_code or 0)
 				return {
 					value = entry,
 					display = entry_str,
